@@ -1,0 +1,126 @@
+/* Body Styles */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #2e2e2e; /* Dark grey background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #fff;
+    /* styles.css */
+/* Also define the standard property 'background-clip' for compatibility */
+background-clip: inherit;
+-webkit-background-clip: inherit;
+-moz-background-clip: inherit;
+}
+
+/* Container Styles */
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 700px;
+    padding: 30px;
+    background-color: #3b3b3b;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Heading Styles */
+.hover-heading {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+    background-image: linear-gradient(90deg, #ff6f61, #4CAF50, #2196F3, #ff6f61);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: transparent;
+}
+
+.hover-heading:hover {
+    background-position: 100% 0;
+    color: transparent;
+}
+
+/* Textarea Styles */
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #4a4a4a;
+    color: #fff;
+    resize: none;
+    transition: border-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+textarea:focus {
+    border-color: #38D2D2;
+    outline: none;
+}
+
+/* Button 91 Styles */
+.button-91 {
+    color: #fff;
+    padding: 15px 25px;
+    background-color: #38D2D2;
+    background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 66% at 26% 20%, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25), inset 0px 3px 9px rgba(255, 255, 255, 0.3), inset 0px 1px 1px rgba(255, 255, 255, 0.6), inset 0px -8px 36px rgba(0, 0, 0, 0.3), inset 0px 1px 5px rgba(255, 255, 255, 0.6), 2px 19px 31px rgba(0, 0, 0, 0.2);
+    border-radius: 14px;
+    font-weight: bold;
+    font-size: 16px;
+    border: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.button-91:hover {
+    transform: scale(1.1);
+}
+
+/* Response Box Styles */
+#responseBox {
+    margin-top: 25px;
+    padding: 20px;
+    background-color: #4a4a4a;
+    border-radius: 8px;
+    font-size: 18px;
+    color: #fff;
+    min-height: 50px;
+    text-align: left;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    width: 100%;
+    visibility: hidden; /* Default to hidden */
+}
+
+#responseBox.success {
+    border: 1px solid #38D2D2;
+}
+
+#responseBox.error {
+    border: 1px solid #ff6f61;
+}
+
+
